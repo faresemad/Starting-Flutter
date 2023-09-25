@@ -1,5 +1,6 @@
 void main() {
   // Introduce yourself
   String name = "Fares Emad";
-  print("Hello World, my name's $name");
+  int age = 22;
+  print("Hello World, my name's $name, I'm $age years old");
 }
