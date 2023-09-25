@@ -1,12 +1,22 @@
 void main() {
-  int a = 10;
-  int b = 20;
-  int c = a + b; // - > 10 + 20 = 30
-  // int c = a - b; // - > 10 - 20 = -10
-  // int c = a * b; // - > 10 * 20 = 200
-  // int c = a ~/ b; // - > 10 ~/ 20 = 0
-  // int c = a % b; // - > 10 % 20 = 10
-  // double c = a / b; // - > 10 / 20 = 0.5
-  // int c = a / b; // can't divide int by int we should use double
-  print(c);
+  String name = "Fares Emad";
+  print(name.toUpperCase()); // Output: "FARES EMAD"
+  int age = 22;
+  print(age.toDouble()); // Output: 22.0
+
+  // --------------------------------------------------------------
+  // also we can use toLowerCase(), toUpperCase(), trim(),
+  // trimLeft(), trimRight(), split(), replaceAll(), replaceFirst(),
+  // contains(), substring(), compareTo(), toInt(), toDouble(),
+  // toString(), isEmpty(), isNotEmpty(), length, indexOf(),
+  // lastIndexOf(), startsWith(), endsWith(), charAt(), codeUnitAt(),
+  // runes, padLeft(), padRight(), splitMapJoin(), replaceRange(),
+  // replaceAllMapped(), replaceFirstMapped(), splitMapJoin(),
+  // toLowerCase(), toUpperCase(), trim(), trimLeft(), trimRight(),
+  // split(), replaceAll(), replaceFirst(), contains(), substring(),
+  // compareTo(), toInt(), toDouble(), toString(), isEmpty(), isNotEmpty(),
+  // length, indexOf(), lastIndexOf(), startsWith(), endsWith(), charAt(),
+  // codeUnitAt(), runes, padLeft(), padRight(), splitMapJoin(),
+  // replaceRange(), replaceAllMapped(), replaceFirstMapped(), splitMapJoin()
+  // ------------------------------------------------------------
 }
