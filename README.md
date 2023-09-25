@@ -1,15 +1,25 @@
 # Starting Flutter
 
-| Start learning Flutter
+> Start learning Flutter
 
 ## Course Link
 
-[Flutter Course](https://www.udemy.com/course/best-and-complete-flutter-course-for-beginners/)
+[Flutter & Dart Complete Development Course [2023] [Arabic]](https://www.udemy.com/course/best-and-complete-flutter-course-for-beginners/)
 
 ## What I Learned
 
-- Dart Programming Basic
-- Object Oriented Programming
-- Exception Handling
-- Flutter Basic
-- Build Some Apps with Flutter (Birthday card app, Business card app,...,etc.)
+- [ ] Introduction
+- [ ] Dart Programming Basic
+- [ ] Object Oriented Programming
+- [ ] Exception Handling
+- [ ] Flutter Basic
+- [ ] Birthday card app
+- [ ] Business card app
+- [ ] Basketball Points Counter App
+- [ ] Language Learning App
+- [ ] Tunes Player app
+- [ ] News App
+- [ ] Weather App
+- [ ] Chat App
+- [ ] Store App
+- [ ] Notes App
