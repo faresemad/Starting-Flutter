@@ -1,12 +1,19 @@
 void main() {
-  int a = 10;
-  int b = 20;
-  int c = a + b; // - > 10 + 20 = 30
-  // int c = a - b; // - > 10 - 20 = -10
-  // int c = a * b; // - > 10 * 20 = 200
-  // int c = a ~/ b; // - > 10 ~/ 20 = 0
-  // int c = a % b; // - > 10 % 20 = 10
-  // double c = a / b; // - > 10 / 20 = 0.5
-  // int c = a / b; // can't divide int by int we should use double
-  print(c);
+  Map<String, dynamic> person = {
+    'name': 'John',
+    'age': 30,
+    'married': true,
+    'address': {
+      'street': 'Main Street',
+      'number': 123,
+    },
+    'children': [
+      {'name': 'Mary', 'age': 5},
+      {'name': 'John', 'age': 7},
+    ],
+  };
+  print(person['name']); // John
+  print(person['age']); // 30
+  print(person['married']); // true
+  print(person['address']['street']); // Main Street
 }
