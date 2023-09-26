@@ -1,7 +1,19 @@
 void main() {
-  Set<int> set = {1, 2, 3, 4, 5};
-  // set can't have duplicate values
-  print(set);
-  Set<String> set2 = {'a', 'b', 'c'};
-  print(set2);
+  Map<String, dynamic> person = {
+    'name': 'John',
+    'age': 30,
+    'married': true,
+    'address': {
+      'street': 'Main Street',
+      'number': 123,
+    },
+    'children': [
+      {'name': 'Mary', 'age': 5},
+      {'name': 'John', 'age': 7},
+    ],
+  };
+  print(person['name']); // John
+  print(person['age']); // 30
+  print(person['married']); // true
+  print(person['address']['street']); // Main Street
 }
