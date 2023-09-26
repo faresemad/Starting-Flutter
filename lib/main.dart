@@ -1,9 +1,7 @@
 void main() {
-  List<String> names = ["fares", "emad"];
-  // ['fares', 'emad', 1]
-  // The element type 'int' or any other type can't be assigned to the list type 'String'.
-  print(names[0]);
-  var d = ["fares", "emad", 1];
-  d.add("test");
-  print(d[3]);
+  Set<int> set = {1, 2, 3, 4, 5};
+  // set can't have duplicate values
+  print(set);
+  Set<String> set2 = {'a', 'b', 'c'};
+  print(set2);
 }
