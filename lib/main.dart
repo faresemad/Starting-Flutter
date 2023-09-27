@@ -1,16 +1,13 @@
 void main() {
-  int x = 1;
-  int y = 2;
-  // if (y >= x) {
-  //   print("`Y` greater than `X`");
-  // } else {
-  //   print("`X` greater than `Y`");
-  // }
-  if (x >= 0 && y >= 0) {
-    print("Both `X` and `Y` are positive");
-  } else if (x >= 0 || y >= 0) {
-    print("Either `X` or `Y` is positive");
-  } else {
-    print("Both `X` and `Y` are negative");
+  int x = 0;
+  switch (x) {
+    case 1:
+      print('x is 1');
+      break;
+    case 2:
+      print('x is 2');
+      break;
+    default:
+      print('x is not 1 or 2');
   }
 }
