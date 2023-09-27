@@ -1,19 +1,16 @@
 void main() {
-  Map<String, dynamic> person = {
-    'name': 'John',
-    'age': 30,
-    'married': true,
-    'address': {
-      'street': 'Main Street',
-      'number': 123,
-    },
-    'children': [
-      {'name': 'Mary', 'age': 5},
-      {'name': 'John', 'age': 7},
-    ],
-  };
-  print(person['name']); // John
-  print(person['age']); // 30
-  print(person['married']); // true
-  print(person['address']['street']); // Main Street
+  int x = 1;
+  int y = 2;
+  // if (y >= x) {
+  //   print("`Y` greater than `X`");
+  // } else {
+  //   print("`X` greater than `Y`");
+  // }
+  if (x >= 0 && y >= 0) {
+    print("Both `X` and `Y` are positive");
+  } else if (x >= 0 || y >= 0) {
+    print("Either `X` or `Y` is positive");
+  } else {
+    print("Both `X` and `Y` are negative");
+  }
 }
