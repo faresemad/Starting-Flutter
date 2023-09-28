@@ -1,14 +1,22 @@
 void main() {
-  int? number1;
-  int number2 = 10;
-  int result;
+  List<int> list = [1, 2, 3, 4, 5];
 
-  result = number1 ?? 15;
-  print(result); // 15
-  // int result = number1! + number2;
-  // print(result); // Exception has occurred
-
-  // print(number1?.toDouble());
-
-  // print(number1!.toDouble()); // Exception has occurred
+  // -----------------------------------------
+  // For loop
+  for (int i = 0; i < list.length; i++) {
+    // i++ is the same as i = i + 1
+    print(list[i]);
+  }
+  // -----------------------------------------
+  // For in loop
+  for (var item in list) {
+    print(item);
+  }
+  // -----------------------------------------
+  // For each loop
+  list.forEach((item) {
+    // not necessary to use var
+    print(item);
+  });
+  // -----------------------------------------
 }
