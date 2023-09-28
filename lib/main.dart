@@ -1,22 +1,15 @@
 void main() {
-  List<int> list = [1, 2, 3, 4, 5];
-
+  bool isTrue = true;
+  bool isFalse = false;
   // -----------------------------------------
-  // For loop
-  for (int i = 0; i < list.length; i++) {
-    // i++ is the same as i = i + 1
-    print(list[i]);
+  while (isTrue) {
+    print('Hello World');
+    isTrue = false; // This will stop the loop
   }
   // -----------------------------------------
-  // For in loop
-  for (var item in list) {
-    print(item);
-  }
-  // -----------------------------------------
-  // For each loop
-  list.forEach((item) {
-    // not necessary to use var
-    print(item);
-  });
-  // -----------------------------------------
+  do {
+    print('Hello World');
+    isFalse = false;
+  } while (isFalse);
+  // This will print Hello World once then stop the loop
 }
