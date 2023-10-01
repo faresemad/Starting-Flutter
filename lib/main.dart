@@ -1,8 +1,15 @@
 void main() {
-  print("Starting the app...");
-  myName(name: "fares");
+  Humen fares = new Humen();
+  fares.name = "Fares Emad";
+  fares.age = 22;
+  fares.height = 183;
+  fares.weight = 60;
 }
 
-dynamic myName({var name, var age = 0}) {
-  return print("My name is $name and I am $age years old.");
+class Humen {
+  String? name;
+  int? age;
+  double? height;
+  double? weight;
+  int numberOfArms = 2;
 }
