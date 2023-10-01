@@ -9,7 +9,7 @@
 ## What I Learned
 
 - [x] Introduction
-- [ ] Dart Programming Basic
+- [x] Dart Programming Basic
 - [ ] Object Oriented Programming
 - [ ] Exception Handling
 - [ ] Flutter Basic
