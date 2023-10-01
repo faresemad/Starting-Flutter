@@ -1,13 +1,15 @@
 void main() {
-  int x = 0;
-  switch (x) {
-    case 1:
-      print('x is 1');
-      break;
-    case 2:
-      print('x is 2');
-      break;
-    default:
-      print('x is not 1 or 2');
-  }
+  Humen fares = new Humen();
+  fares.name = "Fares Emad";
+  fares.age = 22;
+  fares.height = 183;
+  fares.weight = 60;
+}
+
+class Humen {
+  String? name;
+  int? age;
+  double? height;
+  double? weight;
+  int numberOfArms = 2;
 }
