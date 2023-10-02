@@ -5,7 +5,7 @@ class Human {
   double? weight;
   int _numberOfArms = 2; // Private variable
 
-  Human({String? name, int? age, double? height, double? weight}) {
+  Human({required String name, int? age, double? height, double? weight}) {
     print("A new human has been created!");
     this.name = name;
     this.age = age;
