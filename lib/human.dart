@@ -17,15 +17,21 @@ class Human {
         "Hello, my name is $name and I'm $age years old.\nI'm $height cm tall and weigh $weight kg.");
   }
 
-  void setnumberOfArms(int arms) {
-    if (arms <= 2 && arms >= 0) {
-      _numberOfArms = arms;
+  // This function is called a Setter method
+  set numberOfArms(int number) {
+    if (number <= 2 && number >= 0) {
+      this._numberOfArms = number;
     } else {
       print("Invalid number of arms!");
     }
   }
 
-  int getnumberOfArms() {
-    return _numberOfArms;
-  }
+  // This function is called a Arrow function
+  int getnumberOfArms() => this._numberOfArms;
+
+  // This function is called a Getter method
+  int get numberOfArms => this._numberOfArms;
+  // int get numberOfArms {
+  //   return this._numberOfArms;
+  // }
 }
