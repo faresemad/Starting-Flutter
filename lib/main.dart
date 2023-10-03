@@ -1,8 +1,19 @@
-import 'human.dart';
+// import 'human.dart';
+import 'animal.dart';
 
 void main() {
-  Human person = Human(name: "John Doe", age: 30, height: 180.0, weight: 80.0);
-  person.introduce();
-  person.numberOfArms = 3;
-  print(person.numberOfArms);
+  print("Hello World");
+  Dogs dog = Dogs(speed: "30mph", numOfLegs: 4);
+  print(dog.introduce());
+}
+
+class Dogs extends Animal {
+  String speed;
+  // Dogs({required this.speed, required super.numOfLegs});
+  Dogs({required this.speed, required int numOfLegs})
+      : super(numOfLegs: numOfLegs);
+
+  introduce() {
+    return speed + " => " + numOfLegs.toString();
+  }
 }
