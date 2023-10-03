@@ -2,9 +2,9 @@
 import 'animal.dart';
 
 void main() {
-  Dogs dog = Dogs(speed: "30mph", numOfLegs: 4);
-  Cats cat = Cats(speed: "20mph", numOfLegs: 4);
-  Lion lion = Lion(color: "Yellow", numOfLegs: 4);
+  Dogs dog = Dogs();
+  Cats cat = Cats();
+  Lion lion = Lion();
 
   List<Animal> animals = [dog, cat, lion];
 
@@ -13,48 +13,47 @@ void main() {
   }
 }
 
-class Dogs extends Animal {
-  String speed;
-  // Dogs({required this.speed, required super.numOfLegs});
-  Dogs({required this.speed, required int numOfLegs})
-      : super(numOfLegs: numOfLegs);
+class Dogs implements Animal {
+  @override
+  int numOfLegs = 4;
 
   @override
   eat() {
-    print("Dogs eat meat");
+    print("Dogs Is Eating");
   }
 
-  introduce() {
-    return speed + " => " + numOfLegs.toString();
+  @override
+  walk() {
+    print("Dogs Is Walking");
   }
 }
 
-class Cats extends Animal {
-  String speed;
-  Cats({required this.speed, required int numOfLegs})
-      : super(numOfLegs: numOfLegs);
+class Cats implements Animal {
+  @override
+  int numOfLegs = 4;
 
   @override
   eat() {
-    print("Cats eat meat");
+    print("Cats Is Eating");
   }
 
-  introduce() {
-    return speed + " => " + numOfLegs.toString();
+  @override
+  walk() {
+    print("Cats Is Walking");
   }
 }
 
-class Lion extends Cats {
-  String color;
-  Lion({required this.color, required int numOfLegs})
-      : super(speed: "50mph", numOfLegs: numOfLegs);
+class Lion implements Cats {
+  @override
+  int numOfLegs = 4;
 
   @override
   eat() {
-    print("Lion eat meat");
+    print("Lion Is Eating");
   }
 
-  introduce() {
-    return color + " => " + speed + " => " + numOfLegs.toString();
+  @override
+  walk() {
+    print("Lion Is Walking");
   }
 }
