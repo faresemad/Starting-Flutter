@@ -13,6 +13,11 @@ class Dogs extends Animal {
   Dogs({required this.speed, required int numOfLegs})
       : super(numOfLegs: numOfLegs);
 
+  @override
+  eat() {
+    print("Dogs eat meat");
+  }
+
   introduce() {
     return speed + " => " + numOfLegs.toString();
   }
