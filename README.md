@@ -10,7 +10,7 @@
 
 - [x] Introduction
 - [x] Dart Programming Basic
-- [ ] Object Oriented Programming
+- [x] Object Oriented Programming
 - [ ] Exception Handling
 - [ ] Flutter Basic
 - [ ] Birthday card app

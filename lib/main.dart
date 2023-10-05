@@ -1,15 +1,14 @@
 void main() {
-  Humen fares = new Humen();
-  fares.name = "Fares Emad";
-  fares.age = 22;
-  fares.height = 183;
-  fares.weight = 60;
+  Gender gender = Gender.male;
+
+  // best practice is to use switch case
+  switch (gender) {
+    case Gender.male:
+      break;
+    case Gender.female:
+      break;
+  }
 }
 
-class Humen {
-  String? name;
-  int? age;
-  double? height;
-  double? weight;
-  int numberOfArms = 2;
-}
+// used when you want to limit a variable to have only a certain values
+enum Gender { male, female }
