@@ -1,18 +1,14 @@
-import 'animal.dart';
-
 void main() {
-  // anounymous object
-  List<Animal> animals = [Dog(), Snakes()];
-}
+  Gender gender = Gender.male;
 
-class Dog extends Animal with MammelsMixin, PetMixin {
-  desplay() {
-    print("Hello From Dog Class");
+  // best practice is to use switch case
+  switch (gender) {
+    case Gender.male:
+      break;
+    case Gender.female:
+      break;
   }
 }
 
-class Snakes extends Animal with RappelsMixin, PetMixin {
-  desplay() {
-    print("Hello From Snakes Class");
-  }
-}
+// used when you want to limit a variable to have only a certain values
+enum Gender { male, female }
