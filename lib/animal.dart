@@ -4,7 +4,21 @@ class Animal {
     print("Animal is eating");
   }
 
-  walk() {
-    print("Animal is walking");
+  // walk() {
+  //   print("Animal is walking");
+  // }
+}
+
+mixin MammelsMixin {
+  walk() {}
+}
+
+mixin RappelsMixin {
+  crawl() {}
+}
+
+mixin PetMixin {
+  eat() {
+    print("Eating From Pet");
   }
 }

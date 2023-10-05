@@ -1,24 +1,23 @@
+import 'animal.dart';
+
 void main() {
   print("Hello Mother Fuckers");
-  Circle c1 = new Circle(radius: 5, x: 12, y: 12);
-  c1.draw();
+  Dog d1 = new Dog();
+  d1.desplay();
 
-  Circle c2 = new Circle.origin(radius: 6);
-  c2.draw();
+  Snakes snakes = new Snakes();
+  snakes.desplay();
+  snakes.eat();
 }
 
-class Circle {
-  double radius;
-  late int x, y;
-
-  Circle({required this.radius, required this.x, required this.y});
-
-  draw() {
-    print("drawing Circle with radius $radius and x $x and y $y");
+class Dog extends Animal with MammelsMixin, PetMixin {
+  desplay() {
+    print("Hello From Dog Class");
   }
+}
 
-  Circle.origin({required this.radius}) {
-    x = 0;
-    y = 0;
+class Snakes extends Animal with RappelsMixin, PetMixin {
+  desplay() {
+    print("Hello From Snakes Class");
   }
 }
