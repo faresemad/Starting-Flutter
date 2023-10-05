@@ -1,13 +1,8 @@
 import 'animal.dart';
 
 void main() {
-  print("Hello Mother Fuckers");
-  Dog d1 = new Dog();
-  d1.desplay();
-
-  Snakes snakes = new Snakes();
-  snakes.desplay();
-  snakes.eat();
+  // anounymous object
+  List<Animal> animals = [Dog(), Snakes()];
 }
 
 class Dog extends Animal with MammelsMixin, PetMixin {
