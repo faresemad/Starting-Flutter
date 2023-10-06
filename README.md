@@ -11,7 +11,7 @@
 - [x] Introduction
 - [x] Dart Programming Basic
 - [x] Object Oriented Programming
-- [ ] Exception Handling
+- [x] Exception Handling
 - [ ] Flutter Basic
 - [ ] Birthday card app
 - [ ] Business card app
