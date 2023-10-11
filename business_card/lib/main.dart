@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(BusinessCard());
-}
+void main() => runApp(BusinessCard());
 
 class BusinessCard extends StatelessWidget {
   @override
@@ -10,17 +8,19 @@ class BusinessCard extends StatelessWidget {
     return MaterialApp(
       title: 'Business Card',
       home: Scaffold(
-        backgroundColor: Color.fromARGB(255, 9, 36, 54),
+        backgroundColor: Color(0xFF092436),
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
-              radius: 73.0,
+              radius: 75.0,
               backgroundColor: Colors.white,
               child: CircleAvatar(
-                radius: 70.0,
+                radius: 73.0,
                 backgroundImage: AssetImage('images/face.jpg'),
               ),
             ),
+            SizedBox(height: 10.0),
             Text(
               'Fares Emad',
               style: TextStyle(
@@ -29,69 +29,39 @@ class BusinessCard extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
+            SizedBox(height: 5.0),
             Text(
               'Backend Developer',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 20.0,
-                color: Color.fromARGB(158, 85, 78, 78),
+                color: Color(0xFF9E4E4E),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10.0),
-                  color: Colors.white,
-                ),
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                padding: EdgeInsets.all(10.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      color: Color.fromARGB(255, 9, 36, 54),
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '+20 128 132 3602',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ],
+            SizedBox(height: 20.0),
+            Card(
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: ListTile(
+                leading: Icon(Icons.phone, color: Color(0xFF092436)),
+                title: Text(
+                  '+20 128 132 3602',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 20.0,
+                  ),
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10.0),
-                  color: Colors.white,
-                ),
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                padding: EdgeInsets.all(10.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.mail,
-                      color: Color.fromARGB(255, 9, 36, 54),
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      'faresemadx@gmail.com',
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ],
+            Card(
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: ListTile(
+                leading: Icon(Icons.mail, color: Color(0xFF092436)),
+                title: Text(
+                  'faresemadx@gmail.com',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 20.0,
+                  ),
                 ),
               ),
             ),
