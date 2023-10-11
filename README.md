@@ -13,7 +13,7 @@
 - [x] Object Oriented Programming
 - [x] Exception Handling
 - [x] Flutter Basic
-- [ ] Birthday card app
+- [x] Birthday card app
 - [ ] Business card app
 - [ ] Basketball Points Counter App
 - [ ] Language Learning App
