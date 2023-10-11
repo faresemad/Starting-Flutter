@@ -12,7 +12,7 @@
 - [x] Dart Programming Basic
 - [x] Object Oriented Programming
 - [x] Exception Handling
-- [ ] Flutter Basic
+- [x] Flutter Basic
 - [ ] Birthday card app
 - [ ] Business card app
 - [ ] Basketball Points Counter App
