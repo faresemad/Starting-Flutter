@@ -14,7 +14,7 @@
 - [x] Exception Handling
 - [x] Flutter Basic
 - [x] Birthday card app
-- [ ] Business card app
+- [x] Business card app
 - [ ] Basketball Points Counter App
 - [ ] Language Learning App
 - [ ] Tunes Player app
