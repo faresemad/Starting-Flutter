@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(BusinessCard());
+void main() => runApp(const BusinessCard());
 
 class BusinessCard extends StatelessWidget {
+  const BusinessCard({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Business Card',
       home: Scaffold(
         backgroundColor: Color(0xFF092436),
@@ -31,14 +33,34 @@ class BusinessCard extends StatelessWidget {
             ),
             SizedBox(height: 5.0),
             Text(
-              'Backend Developer',
+              'BACKEND DEVELOPER',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 20.0,
-                color: Color(0xFF9E4E4E),
+                fontSize: 15.0,
+                color: Color.fromARGB(255, 71, 71, 71),
               ),
             ),
             SizedBox(height: 20.0),
+            Divider(
+              color: Colors.white54,
+              thickness: 0.5,
+              indent: 50.0,
+              endIndent: 50.0,
+              height: 8,
+            ),
+            Card(
+              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              child: ListTile(
+                leading: Icon(Icons.school, color: Color(0xFF092436)),
+                title: Text(
+                  'Faculty of Computers and Information',
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15.0,
+                  ),
+                ),
+              ),
+            ),
             Card(
               margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
               child: ListTile(
