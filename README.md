@@ -15,7 +15,7 @@
 - [x] Flutter Basic
 - [x] Birthday card app
 - [x] Business card app
-- [ ] Basketball Points Counter App
+- [x] Basketball Points Counter App
 - [ ] Language Learning App
 - [ ] Tunes Player app
 - [ ] News App
